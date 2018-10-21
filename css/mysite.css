@@ -1,0 +1,256 @@
+@font-face
+{
+	font-family: Expletus Sans;
+	font-family: Great Vibes;
+	font-family: Ubuntu;
+	font-family: DatBox;
+	src : url('fonts/ExpletusSans-Regular.ttf');
+	src : url('fonts/GreatVibes-Regular.ttf');
+	src : url('fonts/Ubuntu-Regular.ttf');
+}
+body
+{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: 'Ubuntu', sans-serif;
+}
+/*
+@media only screen and (max-width:800px)
+{
+	.main
+	{
+    	width:80%;
+  	}
+    	width:100%;
+  	}
+}
+*/
+@media only screen and (max-width:500px)
+{
+	.rightCt
+	{
+		display: absolute;
+		float:right;
+		width:100%;		
+	}
+}
+.navbar
+{
+	display: inline;
+	color: white;
+	font-family: 'Expletus Sans', cursive;
+	padding:20px;
+	position:fixed;
+	width:100%;
+	top:0px;
+	left:0px;
+	z-index: 2;
+}
+.scrolled
+{
+	display: inline;
+	color: white;
+	font-family: 'Expletus Sans', cursive;
+	padding:20px;
+	position:fixed;
+	width:100%;
+	top:0px;
+	left:0px;	
+	z-index: 2;
+
+	background-color:grey;
+	transition: background-color 1s linear;
+	max-height: 6vh;
+}
+
+#title
+{
+	position: relative;
+	font-size: 2em;
+	letter-spacing: 0.2em;
+	left: 3%;
+}
+
+.menu
+{
+	position: relative;
+	right: 5%;
+	padding: 4px;
+	padding-right: 15px;
+	float: right;
+	text-decoration:none;
+	color: white;
+}
+.menu:hover
+{
+	text-decoration: underline;
+}
+#bgimg
+{
+	margin: -4px;
+	padding: 0px;
+	width:100%;
+}
+
+.About
+{
+	position: relative;
+	padding:0px;
+	margin:0px;
+	top:0px;
+	display: grid;
+	grid-gap:0px;
+	grid-template-columns:1fr 1fr;
+	grid-template-areas: "l r";
+}
+img.myimg
+{
+	position: absolute;
+	width:20%;
+	top:15%;
+	left:90%;
+}
+.leftAb
+{
+	position: absolute;
+	width: 100%;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 10vh;
+	background-color: #DE1030;
+	font-family: 'Great Vibes', cursive;
+	color: white;
+	text-align: center;
+	padding: 0;
+	height: 95vh;
+	grid-area:l;
+}
+.rightAb
+{
+	grid-area:r;
+	font-size: 15px;
+	line-height: 200%;
+	padding: 20%;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	z-index:1;
+}
+
+.Work
+{
+	position: relative;
+	padding:0px;
+	margin:0px;
+	top:0px;
+	display: grid;
+	grid-gap:0px;
+	grid-template-columns:1fr 1fr;
+	grid-template-areas: "lw rw";
+}
+.leftWk
+{
+	width: 100%;
+	position: absolute;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 10vh;
+	background-color: white;
+	font-family: 'Great Vibes', cursive;
+	text-align: center;
+	padding: 0;
+	height: 100vh;
+	grid-area:lw;
+}
+.images
+{
+	grid-area:rw;
+	z-index:1;
+}
+.gallery
+{
+	margin: 0;
+	margin-bottom: -7px;
+	padding: 0;
+	width:100%;
+}
+.container
+{
+	overflow: hidden;
+}
+.item img
+{
+	-webkit-transition: 1.5s ease;
+	transition: 1.5s ease;
+}
+.container:hover .item img
+{
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+}
+
+.Contact
+{
+	position: relative;
+	padding:0px;
+	margin:0px;
+	top:0px;
+	display: grid;
+	grid-gap:0px;
+	grid-template-columns:1fr 1fr;
+	grid-template-areas: "lc rc";
+}
+.leftCt
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 10vh;
+	background-color: #212122;
+	font-family: 'Great Vibes', cursive;
+	color: white;
+	text-align: center;
+	padding: 0;
+	width: 100%;
+	height: 100vh;
+	grid-area:lc;
+}
+.rightCt
+{
+	position: relative;
+	grid-area:rc;
+	font-size: 15px;
+	line-height: 200%;
+	padding: 50px;
+	z-index:1;
+}
+
+.links
+{
+	position: absolute;
+	bottom:3%;
+	display: inline-flex;
+	line-height: 100%;
+}
+.icons img
+{
+	float: bottom;
+	width:25px;
+	padding:5px;
+	padding-right: 7px;
+}
+.icons img:hover
+{
+	background: grey;
+}
+
+.Footer
+{
+	background: grey;
+	padding: 20px;
+	margin: 0;
+}
