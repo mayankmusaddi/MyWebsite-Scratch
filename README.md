@@ -5,3 +5,6 @@ This is my website which is hosted at `www.researchweb.iiit.ac.in/~mayank.musadd
 - HTML
 - CSS
 - JavaScript
+
+## Running the Website
+To run the website just download the directory and double click at `index.html`.
